@@ -1,0 +1,11 @@
+root = true
+
+# JavaScript Settings
+[*.js]
+indent_style = space
+indent_size = 2
+
+# Package file
+[package.json]
+indent_style = space
+indent_size = 2
