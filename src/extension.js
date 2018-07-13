@@ -1,6 +1,6 @@
 /* eslint-disable-next-line import/no-unresolved */
 const vscode = require('vscode');
-const { addKey, testFunc } = require('./commands');
+const { addKey, savePublicGist, savePrivateGist } = require('./commands');
 
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
@@ -10,7 +10,8 @@ exports.activate = function activate(context) {
 
   context.subscriptions.push(
     vscode.commands.registerCommand('extension.addKey', addKey),
-    vscode.commands.registerCommand('extension.test', testFunc),
+    vscode.commands.registerCommand('extension.savePublicGist', savePublicGist),
+    vscode.commands.registerCommand('extension.savePrivateGist', savePrivateGist),
   );
 };
 
